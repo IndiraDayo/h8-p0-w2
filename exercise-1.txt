@@ -1,0 +1,99 @@
+Newton Second Law
+
+Algorithm
+1. Buat variable bernama resultan.
+2. Buat variable bernama m.
+3. Buat variable bernama a.
+4. Hitung m * a dan masukan nilai ke dalam resultan
+5. Tampilkan resultan.
+
+------------------------------------------------------------
+Pseudocode
+
+STORE resultan
+STORE m = 600
+STORE a = 2
+
+CALCULATE resultan AS m * a
+
+DISPLAY resultan
+
+------------------------------------------------------------
+JavaScript
+
+var resultan;
+var m = 600;
+var a = 2;
+
+resultan = m * a;
+
+console.log(resultan)
+
+==========================================================================================================================================
+Tahun Kabisat
+
+Algorithm
+1. Buat variable tahun dengan angka apa saja.
+2. Buat variable tahunKabisat sebagai boolean.
+3. Jika tahun / 4 dengan remainder 0 dan / 100 dengan remainder 
+   tidak sama dengan 0 maka tahunKabisat sama dengan true.
+4. Jika tahun / 4 dengan remainder 0, / 100 dengan remainder 0, 
+   dan / 400 dengan remainder 0 maka tahunKabisat sama dengan true.
+5. Jika tidak mengikuti ketentuan di atas maka tahunKabisat sama dengan false.
+
+------------------------------------------------------------------------------------
+Pseudocode
+
+STORE "tahun" to any number
+STORE "tahunKabisat" AS BOOLEAN
+
+IF tahun % 4 = 0 OR tahun % 100 != 0 
+   STORE tahunKabisat AS TRUE
+ELSE IF tahun % 4 = 0 OR tahun % 100 = 0 OR tahun % 400 = 0 THEN
+   STORE tahunKabisat AS TRUE
+ELSE tahunKabisat = FALSE
+
+------------------------------------------------------------------------------------
+JavaScript
+
+var tahun =400;
+
+
+var tahunKabisat = Boolean;
+
+
+
+if (tahun % 4 === 0 ) {
+
+  if (tahun % 100 !== 0){
+
+    tahunKabisat = true;
+
+    console.log(tahunKabisat);
+
+  } else if (tahun % 100 === 0) {
+
+    if (tahun % 400 === 0) {
+
+      tahunKabisat = true;
+
+      console.log(tahunKabisat);
+
+    }
+
+  }
+
+} 
+else {
+
+   tahunKabisat = false;
+
+
+   console.log(tahunKabisat);
+
+
+}
+
+
+======================================================================================================================================
+Laundry Day
